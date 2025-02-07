@@ -1,0 +1,15 @@
+.dashboardContainer {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+
+    height: 100vh;
+    width: 100vw;
+}
+
+.dashboardContentContainer {
+    display: grid;
+
+    grid-template-rows: auto 1fr;
+    width: calc(100vw - 250px);
+}
+

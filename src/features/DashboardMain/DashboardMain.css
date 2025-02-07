@@ -1,0 +1,9 @@
+.dashboardMainContainer {
+    padding: 1.5rem;
+
+    background: hsl(0 0% 90%);
+    grid-column-start: span 10;
+    grid-row-start: 2;
+
+    grid-template-rows: 7rem auto auto;
+}
