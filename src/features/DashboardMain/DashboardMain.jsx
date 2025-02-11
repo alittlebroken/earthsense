@@ -1,6 +1,6 @@
 import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,ResponsiveContainer, RadialBarChart, RadialBar } from 'recharts';
 
-import chartingData, { ticketData, meteorlogicalData} from '../../mocks/mockedData';
+import { meteorlogicalData} from '../../mocks/mockedData';
 
 import './DashboardMain.css';
 
