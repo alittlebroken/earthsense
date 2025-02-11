@@ -4,13 +4,6 @@ import { meteorlogicalData} from '../../mocks/mockedData';
 
 import './DashboardMain.css';
 
-const style = {
-    top: '50%',
-    right: 0,
-    transform: 'translate(0, -50%)',
-    lineHeight: '24px',
-  };
-
 const DashboardMain = ({children}) => {
     return (
         <main className="dashboardMainContainer grid gap-1">
