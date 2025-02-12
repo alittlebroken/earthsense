@@ -55,3 +55,44 @@ export const CardFooter = ({children}) => {
         <div className="cardFooter">{children}</div>
     )
 };
+
+export const CardImage = (props) => {
+
+    const {
+        url,
+        title,
+        alt,
+        children
+    } = props;
+
+    return (
+        <>
+            <img className="cardImage" src={url} title={title} alt={alt} />
+            {children}
+        </>
+    )
+};
+
+export const CardOverLay = (props) => {
+
+    const {
+        children,
+        topLeft,
+        topRight,
+        bottomLeft,
+        bottomRight,
+        center
+    } = props;
+
+    let styles = "cardOverlay ";
+    topLeft ? styles += "cardOverlayTopLeft " : "";
+    topRight ? styles += "cardOverlayTopRight " : "";
+    bottomLeft ? styles += "cardOverlayBottomLeft " : "";
+    bottomRight ? styles += "cardOverlayBottomRight " : "";
+    center ? styles += "cardOverlayCenter " : "";
+
+    return (
+        <div className={styles}>{children}</div>
+    )
+
+}
