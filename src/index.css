@@ -156,7 +156,7 @@ a:hover {
 
 /* Padding */
 .pad-0 {
-  padding: 0;
+  padding: revert;
 }
 
 .pad-1 {
@@ -183,6 +183,23 @@ a:hover {
 /* lists */
 .list-style-none {
   list-style-type: none;
+}
+
+/* Overflows */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflowx-auto {
+  overflow-x: auto;
+}
+
+.overflowy-auto {
+  overflow-y: auto;
 }
 
 /* Gap */
