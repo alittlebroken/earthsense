@@ -155,6 +155,10 @@ a:hover {
 }
 
 /* Padding */
+.pad-0 {
+  padding: 0;
+}
+
 .pad-1 {
   padding: 1rem;
 }
