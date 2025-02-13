@@ -133,6 +133,11 @@ a:hover {
   color: var(--colour-tertiary);
 }
 
+/* Width */
+.width-full {
+  width: 100%;
+}
+
 /* Height */
 .height-3 {
   height: 3rem;
