@@ -133,6 +133,11 @@ a:hover {
   color: var(--colour-tertiary);
 }
 
+/* Width */
+.width-full {
+  width: 100%;
+}
+
 /* Height */
 .height-3 {
   height: 3rem;
@@ -155,6 +160,10 @@ a:hover {
 }
 
 /* Padding */
+.pad-0 {
+  padding: revert;
+}
+
 .pad-1 {
   padding: 1rem;
 }
@@ -181,7 +190,29 @@ a:hover {
   list-style-type: none;
 }
 
+/* Overflows */
+.overflow-hidden {
+  overflow: hidden;
+}
+
+.overflow-auto {
+  overflow: auto;
+}
+
+.overflowx-auto {
+  overflow-x: auto;
+}
+
+.overflowy-auto {
+  overflow-y: auto;
+}
+
 /* Gap */
+
+.gap-05 {
+  gap:0.5rem;
+}
+
 .gap-1{
   gap: 1rem;
 }
@@ -225,6 +256,10 @@ a:hover {
 
 .grid-span-2 {
   grid-column-start: span 2;
+}
+
+.grid-span-3 {
+  grid-column-start: span 3;
 }
 
 .grid-span-4 {
@@ -312,7 +347,7 @@ a:hover {
 
 .dataTableContainer {
   overflow: auto;
-  height: 35rem;
+  height: 20rem;
 }
 
 .dataTable {
