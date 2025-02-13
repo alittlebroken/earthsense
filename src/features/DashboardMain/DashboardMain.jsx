@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Responsiv
 import { meteorlogicalData} from '../../mocks/mockedData';
 
 import './DashboardMain.css';
-import { Card, CardBody, CardHeader, CardTitle } from '../../components/Card/Card';
+import { Card, CardBody, CardHeader, CardTitle, CardImage, CardOverLay, CardFooter } from '../../components/Card/Card';
 
 const DashboardMain = ({children}) => {
     return (
@@ -11,7 +11,7 @@ const DashboardMain = ({children}) => {
             
             <section className="grid grid-cols-4 gap-1">
                 
-                <Card>
+                <Card classes="pad-1">
                     <CardHeader>
                         <CardTitle>Temperature</CardTitle>
                     </CardHeader>
@@ -20,7 +20,7 @@ const DashboardMain = ({children}) => {
                     </CardBody>
                 </Card>
 
-                <Card primary>
+                <Card primary classes="pad-1">
                     <CardHeader>
                         <CardTitle>Humidity</CardTitle>
                     </CardHeader>
@@ -29,7 +29,7 @@ const DashboardMain = ({children}) => {
                     </CardBody>
                 </Card>
 
-                <Card secondary>
+                <Card secondary classes="pad-1">
                     <CardHeader>
                         <CardTitle>Wind Speed</CardTitle>
                     </CardHeader>
@@ -38,7 +38,7 @@ const DashboardMain = ({children}) => {
                     </CardBody>
                 </Card>
 
-                <Card tertiary>
+                <Card tertiary classes="pad-1">
                     <CardHeader>
                         <CardTitle>Wind Dir</CardTitle>
                     </CardHeader>
@@ -49,9 +49,9 @@ const DashboardMain = ({children}) => {
 
             </section>
 
-            <section className="grid grid-cols-4 gap-1 ">
+            <section className="grid grid-cols-4 gap-1">
 
-                <Card classes="grid-span-2">
+                <Card classes="grid-span-2 pad-1">
                    
                     <CardHeader>
                         <CardTitle>Temperature & Humidity - Last 24 Hours</CardTitle>
@@ -76,7 +76,7 @@ const DashboardMain = ({children}) => {
                     
                 </Card>
 
-                <Card classes="grid-span-2 grid gap-1 pad-1">
+                <Card classes="grid-span-2 pad-1">
                    
                     <CardHeader>
                         <CardTitle>Wind Speed - Last 24 Hours</CardTitle>
@@ -105,7 +105,7 @@ const DashboardMain = ({children}) => {
 
             <section className="grid grid-cols-4 gap-1">
 
-                <Card classes="grid-span-4 gap-1">
+                <Card classes="grid-span-4 pad-1">
 
                     <CardHeader>
                         <CardTitle>Air Quality - Last 24 Hours</CardTitle>
