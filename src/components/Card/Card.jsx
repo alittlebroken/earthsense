@@ -7,13 +7,15 @@ export const Card =(props) => {
         primary,
         secondary,
         tertiary,
-        classes
+        classes,
+        landscape
     } = props;
 
     let styles = "card ";
     primary ? styles += "cardBgPrimary " : "";
     secondary ? styles += "cardBgSecondary " : "";
     tertiary ? styles += "cardBgTertiary " : "";
+    landscape ? styles += "cardLandscape " : "";
     classes ? styles += classes + " " : "";
 
     return (
@@ -28,10 +30,20 @@ export const CardHeader = ({children}) => {
     )
 };
 
-export const CardTitle = ({children}) => {
+export const CardTitle = (props) => {
+
+    const {
+        children,
+        md,
+        lg
+    } = props;
+
+    let styles = "cardTitle ";
+    md ? styles += "cardTitle-md " : "";
+    lg ? styles += "cardTitle-lg " : "";
 
     return (
-        <span className="cardTitle">{children}</span>
+        <span className={styles}>{children}</span>
     )
 };
 
@@ -42,10 +54,19 @@ export const CardTitleDescription = ({children}) => {
     )
 };
 
-export const CardBody = ({children}) => {
+export const CardBody = (props) => {
+
+    const {
+        children,
+        classes
+    } = props;
+
+    let styles = "cardBody ";
+    classes ? styles += classes + " " : "";
+   
 
     return (
-        <div className="cardBody">{children}</div>
+        <div className={styles}>{children}</div>
     )
 };
 
@@ -62,12 +83,22 @@ export const CardImage = (props) => {
         url,
         title,
         alt,
-        children
+        children,
+        sm,
+        md,
+        lg,
+        classes
     } = props;
+
+    let styles = "cardImage ";
+    sm ? styles += "cardImageSmall " : "";
+    md ? styles += "cardImageMedium " : "";
+    lg ? styles += "cardImageLarge" : "";
+    classes ? styles += classes + " " : "";
 
     return (
         <>
-            <img className="cardImage" src={url} title={title} alt={alt} />
+            <img className={styles} src={url} title={title} alt={alt} />
             {children}
         </>
     )
