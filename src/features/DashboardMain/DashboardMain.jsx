@@ -3,7 +3,7 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Responsiv
 import { meteorlogicalData} from '../../mocks/mockedData';
 
 import './DashboardMain.css';
-import { Card, CardBody, CardHeader, CardTitle, CardImage, CardOverLay, CardFooter } from '../../components/Card/Card';
+import { Card, CardBody, CardHeader, CardTitle } from '../../components/Card/Card';
 import { TableData, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableColumn } from '../../components/Table/Table';
 
 const DashboardMain = ({children}) => {
