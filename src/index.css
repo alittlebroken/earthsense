@@ -266,6 +266,22 @@ a:hover {
   grid-column-start: span 4;
 }
 
+.grid-row-span-1 {
+  grid-row-start: span 1;
+}
+
+.grid-row-span-2 {
+  grid-row-start: span 2;
+}
+
+.grid-row-span-3 {
+  grid-row-start: span 3;
+}
+
+.grid-row-span-4 {
+  grid-row-start: span 4;
+}
+
 .grid-center {
   align-content: center;
   justify-items: center;
