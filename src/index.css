@@ -266,6 +266,22 @@ a:hover {
   grid-column-start: span 4;
 }
 
+.grid-row-span-1 {
+  grid-row-start: span 1;
+}
+
+.grid-row-span-2 {
+  grid-row-start: span 2;
+}
+
+.grid-row-span-3 {
+  grid-row-start: span 3;
+}
+
+.grid-row-span-4 {
+  grid-row-start: span 4;
+}
+
 .grid-center {
   align-content: center;
   justify-items: center;
@@ -343,37 +359,4 @@ a:hover {
 
 .flex-nowrap {
   flex-wrap: nowrap;
-}
-
-.dataTableContainer {
-  overflow: auto;
-  height: 20rem;
-}
-
-.dataTable {
-  border-collapse: collapse;
-  border-spacing: 0;
-  width: 100%;
-  height: 100%;
-}
-
-.dataTable td, th {
-  font-size: .9rem;
-  padding: .8rem;
-  border-bottom: 1px solid #ddd;
-  min-width: 9rem;
-}
-
-.dataTable th {
-  height: 2rem;
-  text-align: left;
-}
-
-.dataTable tbody tr:nth-child(even) {
-  background-color: #f2f2f2;
-} 
-
-.dataTable tbody tr:hover {
-  background-color: var(--colour-secondary);
-  color: var(--colour-white);
 }

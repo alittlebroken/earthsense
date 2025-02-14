@@ -3,7 +3,8 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Responsiv
 import { meteorlogicalData} from '../../mocks/mockedData';
 
 import './DashboardMain.css';
-import { Card, CardBody, CardHeader, CardTitle, CardImage, CardOverLay, CardFooter } from '../../components/Card/Card';
+import { Card, CardBody, CardHeader, CardTitle } from '../../components/Card/Card';
+import { TableData, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableColumn } from '../../components/Table/Table';
 
 const DashboardMain = ({children}) => {
     return (
@@ -112,34 +113,32 @@ const DashboardMain = ({children}) => {
                     </CardHeader>
 
                     <CardBody>
-
-                        <div className="dataTableContainer">
-                            <table className="dataTable">
-                                <thead>
-                                <tr>
-                                    <th>Time</th>
-                                    <th>Particulates PM<sub>10</sub></th>
-                                    <th>Carbon Monoxide CO</th>
-                                    <th>Carbon Dioxide CO2</th>
-                                    <th>Nitrogen Dioxide NO2</th>
-                                </tr>
-                                </thead>
-                                <tbody>
-                                    {meteorlogicalData.airQualityData.map((air) => {
-                                        return (
-                                            <tr>
-                                                <td>{air.time}</td>
-                                                <td>{air.particulates}</td>
-                                                <td>{air.co}</td>
-                                                <td>{air.co2}</td>
-                                                <td>{air.no2}</td>
-                                            </tr>
-                                        )
-                                    })}
-                                </tbody>
-                            </table>
-                        </div>
-
+                            <TableData>
+                                <Table >
+                                    <TableHeader>
+                                        <TableRow>
+                                            <TableHeaderColumn>Time</TableHeaderColumn>
+                                            <TableHeaderColumn>Particulates PM<sub>10</sub></TableHeaderColumn>
+                                            <TableHeaderColumn>Carbon Monoxide CO</TableHeaderColumn>
+                                            <TableHeaderColumn>Carbon Dioxide CO2</TableHeaderColumn>
+                                            <TableHeaderColumn>Nitrogen Dioxide NO2</TableHeaderColumn>
+                                        </TableRow>
+                                    </TableHeader>
+                                    <TableBody>
+                                        {meteorlogicalData.airQualityData.map((air) => {
+                                            return (
+                                                <TableRow>
+                                                    <TableColumn>{air.time}</TableColumn>
+                                                    <TableColumn>{air.particulates}</TableColumn>
+                                                    <TableColumn>{air.co}</TableColumn>
+                                                    <TableColumn>{air.co2}</TableColumn>
+                                                    <TableColumn>{air.no2}</TableColumn>
+                                                </TableRow>
+                                            )
+                                        })}
+                                    </TableBody>
+                                </Table>
+                            </TableData>
                     </CardBody>
 
                 </Card>
