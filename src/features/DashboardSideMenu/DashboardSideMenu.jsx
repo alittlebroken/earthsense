@@ -1,8 +1,17 @@
 import './DashboardSideMenu.css';
 
-const DashboardSideMenu = () => {
+const DashboardSideMenu = (props) => {
+
+    const {
+        classes
+    } = props;
+
+    let styles = "dashboardSideMenuContainer ";
+
+    classes ? styles += classes + " ": "";
+
     return (
-        <aside className="dashboardSideMenuContainer">
+        <aside className={styles}>
             <h1 className="roboto-heading h2 grid grid-center">
                     <span className="material-symbols-outlined icon-lg">globe</span>
                     EarthSense
