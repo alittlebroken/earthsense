@@ -3,7 +3,6 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Responsiv
 import { meteorlogicalData} from '../../mocks/mockedData';
 
 import { Card, CardBody, CardHeader, CardTitle } from '../../components/Card/Card';
-import { TableData, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableColumn } from '../../components/Table/Table';
 
 import AirQuality from '../AirQuality/AirQuality';
 
