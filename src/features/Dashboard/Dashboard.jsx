@@ -1,27 +1,31 @@
+import { DataContext } from '../../contexts/DataContext';
 
 import DashboardSideMenu from '../DashboardSideMenu/DashboardSideMenu';
 import DashboardHeader from '../DashboardHeader/DashboardHeader';
 import DashboardMain from '../DashboardMain/DashboardMain';
 
 import './Dashboard.css';
+import { meteorlogicalData } from '../../mocks/mockedData';
 
 const Dashboard = () => {
 
+    const data = meteorlogicalData;
+
     return (
-        <div className="dashboardContainer">
+        <DataContext.Provider value={data}>
+            <div className="dashboardContainer">
 
-            <DashboardSideMenu />
+                <DashboardSideMenu />
 
-            <div className="dashboardContentContainer">
+                <div className="dashboardContentContainer">
 
-                <DashboardHeader />
+                    <DashboardHeader />
 
-                <DashboardMain />
+                    <DashboardMain />
 
+                </div>
             </div>
-
-
-        </div>
+        </DataContext.Provider>
     )
 };
 
