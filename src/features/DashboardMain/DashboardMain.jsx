@@ -3,8 +3,8 @@ import { LineChart, Line, XAxis, YAxis, CartesianGrid, Tooltip, Legend,Responsiv
 import { meteorlogicalData} from '../../mocks/mockedData';
 
 import { Card, CardBody, CardHeader, CardTitle } from '../../components/Card/Card';
-import { TableData, Table, TableBody, TableHeader, TableHeaderColumn, TableRow, TableColumn } from '../../components/Table/Table';
 
+import LatestReadings from '../LatestReadings/LatestReadings';
 import AirQuality from '../AirQuality/AirQuality';
 
 import './DashboardMain.css';
@@ -13,45 +13,7 @@ const DashboardMain = ({children}) => {
     return (
         <main className="dashboardMainContainer grid gap-1">
             
-            <section className="grid grid-cols-4 gap-1">
-                
-                <Card classes="pad-1">
-                    <CardHeader>
-                        <CardTitle>Temperature</CardTitle>
-                    </CardHeader>
-                    <CardBody>
-                        <span className="text-lg text-700">{meteorlogicalData.temp}°C</span>
-                    </CardBody>
-                </Card>
-
-                <Card primary classes="pad-1">
-                    <CardHeader>
-                        <CardTitle>Humidity</CardTitle>
-                    </CardHeader>
-                    <CardBody>
-                        <span className="text-lg text-700">{meteorlogicalData.humidity}%</span>
-                    </CardBody>
-                </Card>
-
-                <Card secondary classes="pad-1">
-                    <CardHeader>
-                        <CardTitle>Wind Speed</CardTitle>
-                    </CardHeader>
-                    <CardBody>
-                        <span className="text-lg text-700">{meteorlogicalData.windSpeed} km/h</span>
-                    </CardBody>
-                </Card>
-
-                <Card tertiary classes="pad-1">
-                    <CardHeader>
-                        <CardTitle>Wind Dir</CardTitle>
-                    </CardHeader>
-                    <CardBody>
-                        <span className="text-lg text-700">{meteorlogicalData.windDir}</span>
-                    </CardBody>
-                </Card>
-
-            </section>
+            <LatestReadings data={meteorlogicalData} />
 
             <section className="grid grid-cols-4 gap-1">
 
