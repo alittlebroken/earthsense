@@ -15,8 +15,8 @@ const DashCharts = (props) => {
     return (
         <section className={styles}>
 
-            <DashChart title="Temperature & Humidity - Last 24 Hours" dataId="historicalData" />
-            <DashChart title="Wind Speed - Last 24 Hours" dataId="historicalData" />
+            <DashChart title="Temperature & Humidity - Last 24 Hours" dataId="historicalData" dataKeys={[{ name: "temp", yAxisId: "left", colour: "#75485E"}, { name: "humidity", yAxisId: "right", colour: "#95BF8F"}]} />
+            <DashChart title="Wind Speed - Last 24 Hours" dataId="historicalData" dataKeys={[{ name: "windSpeed", yAxisId: "left", colour: "#16425B"}, { name: "windGusts", yAxisId: "right", colour: "#81C3D7"}]}/>
 
         </section>
     )

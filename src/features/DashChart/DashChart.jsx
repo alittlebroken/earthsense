@@ -13,6 +13,7 @@ const DashChart = (props) => {
     const {
         title,
         dataId,
+        dataKeys,
         classes
     } = props;
 
@@ -38,8 +39,11 @@ const DashChart = (props) => {
                            <YAxis yAxisId="right" orientation="right" />
                            <Tooltip />
                            <Legend />
-                           <Line yAxisId="left" type="monotone" dataKey="temp" stroke="#75485E" />
-                           <Line yAxisId="right" type="monotone" dataKey="humidity" stroke="#95BF8F" />
+                           {dataKeys && dataKeys.map(key => {
+                            return (
+                                <Line yAxisId={key.yAxisId} type="monotone" dataKey={key.name} stroke={key.colour} />
+                            )
+                           })}
                            </LineChart>
                        </ResponsiveContainer>
                    
