@@ -15,8 +15,8 @@ const DashCharts = (props) => {
     return (
         <section className={styles}>
 
-            <DashChart title="Temperature & Humidity - Last 24 Hours" dataKey="historicalData" />
-            <DashChart title="Wind Speed - Last 24 Hours" dataKey="historicalData" />
+            <DashChart title="Temperature & Humidity - Last 24 Hours" dataId="historicalData" />
+            <DashChart title="Wind Speed - Last 24 Hours" dataId="historicalData" />
 
         </section>
     )

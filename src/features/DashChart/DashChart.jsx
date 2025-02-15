@@ -12,7 +12,7 @@ const DashChart = (props) => {
 
     const {
         title,
-        dataKey,
+        dataId,
         classes
     } = props;
 
@@ -30,7 +30,7 @@ const DashChart = (props) => {
                        <ResponsiveContainer width="90%" height="90%">
                            <LineChart
                                
-                               data={data[dataKey]}
+                               data={data[dataId]}
                            >
                            <CartesianGrid strokeDasharray="3 3" />   
                            <XAxis dataKey="time" />
