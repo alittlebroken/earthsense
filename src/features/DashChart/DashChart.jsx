@@ -29,8 +29,7 @@ const DashChart = (props) => {
 
                        <ResponsiveContainer width="90%" height="90%">
                            <LineChart
-                               width={500}
-                               height={300}
+                               
                                data={data[dataKey]}
                            >
                            <CartesianGrid strokeDasharray="3 3" />   
