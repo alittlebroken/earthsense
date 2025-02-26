@@ -1,3 +1,15 @@
+import { Collapsable } from '../../components/Collapsable/Collapsable';
+import { Icon } from '../../components/Icon/Icon';
+import {
+    SideMenu,
+    SideMenuBrand,
+    SideMenuFooter,
+    SideMenuList,
+    SideMenuListItem,
+    SideMenuTitle
+} from '../../components/SideMenu/SideMenu';
+
+
 import './DashboardSideMenu.css';
 
 const DashboardSideMenu = (props) => {
@@ -11,48 +23,60 @@ const DashboardSideMenu = (props) => {
     classes ? styles += classes + " ": "";
 
     return (
-        <aside className={styles}>
-            <h1 className="roboto-heading h2 grid grid-center">
-                    <span className="material-symbols-outlined icon-lg">globe</span>
-                    EarthSense
-            </h1>
-            <nav className="pad-1">
-                <ul className="flex gap-2 flex-col list-style-none">
-                    <li className="flex flex-align-center gap-2">
-                        <span className="material-symbols-outlined">view_comfy_alt</span> 
-                        <a href="#">Overview</a>
-                    </li>
-                    <li className="flex flex-align-center gap-2">
-                        <span className="material-symbols-outlined">group</span> 
-                        <a href="#">Users</a>
-                    </li>
-                    <li className="flex flex-align-center gap-2">
-                        <span className="material-symbols-outlined">Devices</span>
-                        <a href="#">Devices</a>
-                    </li>
-                    <li className="flex flex-align-center gap-2">
-                        <span className="material-symbols-outlined">analytics</span>
-                        <a href="#">Measurements</a>
-                    </li>
-                    <li className="flex flex-align-center gap-2">
-                        <span className="material-symbols-outlined">stacked_bar_chart</span> 
-                        <a href="#">Reports</a>
-                    </li>
-                    <li className="flex flex-align-center gap-2">
-                        <span className="material-symbols-outlined">settings</span> 
-                        <a href="#">Settings</a>
-                    </li>
-                </ul>
-            </nav>
-            <section className="pad-1 padb-2 flex flex-align-end">
-                
-                    <li className="flex flex-align-center gap-2">
-                        <span className="material-symbols-outlined">logout</span> 
-                        <a href="#">Logout</a>
-                    </li>
 
-            </section>
-        </aside>
+        <SideMenu classes={styles}>
+
+            <SideMenuBrand>
+                <SideMenuTitle classes="roboto-heading h2 grid grid-center">
+                    <Icon name="globe" lg />
+                    EarthSense
+                </SideMenuTitle>
+            </SideMenuBrand>
+
+            <SideMenuList>
+                <SideMenuListItem>
+                    <Icon name="view_comfy_alt" />
+                    <Collapsable>Overview</Collapsable>
+                </SideMenuListItem>
+
+                <SideMenuListItem>
+                    <Icon name="group" />
+                    <Collapsable>Users</Collapsable>
+                </SideMenuListItem>
+
+                <SideMenuListItem>
+                    <Icon name="devices" />
+                    <Collapsable>Devices</Collapsable>
+                </SideMenuListItem>
+
+                <SideMenuListItem>
+                    <Icon name="analytics" />
+                    <Collapsable>Measurements</Collapsable>
+                </SideMenuListItem>
+
+                <SideMenuListItem>
+                    <Icon name="stacked_bar_chart" />
+                    <Collapsable>Reports</Collapsable>
+                </SideMenuListItem>
+
+                <SideMenuListItem>
+                    <Icon name="settings" />
+                    <Collapsable>Settings</Collapsable>
+                </SideMenuListItem>
+            </SideMenuList>
+
+            <SideMenuFooter>
+                <SideMenuList>
+                    <SideMenuListItem>
+                        <Icon name="logout" />
+                        Logout
+                    </SideMenuListItem>
+                </SideMenuList>
+            </SideMenuFooter>
+
+        </SideMenu>
+
+        
     )
 };
 
