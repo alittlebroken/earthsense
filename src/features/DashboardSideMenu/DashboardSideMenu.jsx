@@ -1,3 +1,4 @@
+import { Collapsable } from '../../components/Collapsable/Collapsable';
 import { Icon } from '../../components/Icon/Icon';
 import {
     SideMenu,
@@ -35,32 +36,32 @@ const DashboardSideMenu = (props) => {
             <SideMenuList>
                 <SideMenuListItem>
                     <Icon name="view_comfy_alt" />
-                    Overview
+                    <Collapsable>Overview</Collapsable>
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="group" />
-                    Users
+                    <Collapsable>Users</Collapsable>
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="devices" />
-                    Devices
+                    <Collapsable>Devices</Collapsable>
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="analytics" />
-                    Measurements
+                    <Collapsable>Measurements</Collapsable>
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="stacked_bar_chart" />
-                    Reports
+                    <Collapsable>Reports</Collapsable>
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="settings" />
-                    Settings
+                    <Collapsable>Settings</Collapsable>
                 </SideMenuListItem>
             </SideMenuList>
 
