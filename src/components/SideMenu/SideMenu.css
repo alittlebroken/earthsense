@@ -1,0 +1,13 @@
+.sideMenuContainer {
+    grid-column-start: span 2;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 5fr 1fr;
+    justify-content: center;
+
+    background: var(--colour-primary);
+    color: var(--colour-white);
+
+    width: 250px;
+    padding: 10px 30px;
+}
