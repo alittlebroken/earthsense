@@ -15,7 +15,7 @@ const Dashboard = () => {
         <DataContext.Provider value={data}>
             <div className="dashboardContainer">
 
-                <DashboardSideMenu />
+                <DashboardSideMenu classes="gap-2" />
 
                 <div className="dashboardContentContainer">
 
