@@ -7,7 +7,7 @@ const useWindowResize = ({ width }) => {
     useLayoutEffect(() => {
 
         const updateSize = () => {
-            console.log(window.innerWidth);
+            
             if(window.innerWidth <= width){
                 setTargetmatch(true);
             } else {
