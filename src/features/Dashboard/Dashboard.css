@@ -13,3 +13,14 @@
     width: calc(100vw - 250px);
 }
 
+@media screen and (max-width: 375px) {
+    
+    .dashboardContainer {
+        grid-template-columns: 1fr;
+    }
+
+    .dashboardContentContainer {
+        width: 100%;
+    }
+
+}
