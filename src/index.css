@@ -61,15 +61,15 @@ body {
 }
 
 .h1 {
-  font-size: 3rem;
+  font-size: clamp(1.8rem, 2.5vw, 3rem);
 }
 
 .h2 {
-  font-size: 2rem;
+  font-size: clamp(1.4rem, 2vw, 2rem);
 }
 
 .h3 {
-  font-size: 1.8rem;
+  font-size: clamp(1rem, 1.5vw, 1.8rem);
 }
 
 /* Background colours */
@@ -108,15 +108,15 @@ body {
 
 /* Text */
 .text-sm {
-  font-size: .5rem;
+  font-size: clamp(.2rem, .5vw, .5rem);
 }
 
 .text-md {
-  font-size: 1.5rem;
+  font-size: clamp(.9rem, 1.5vw, 1.5rem);
 }
 
 .text-lg {
-  font-size: 2.5rem;
+  font-size: clamp(1.5rem, 2vw, 2.5rem);
 }
 
 .text-700 {
