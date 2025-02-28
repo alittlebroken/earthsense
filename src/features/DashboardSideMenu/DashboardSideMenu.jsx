@@ -1,3 +1,6 @@
+import { useContext } from 'react';
+
+import { SideMenuContext } from '../../contexts/SideMenuContext';
 import { Collapsable } from '../../components/Collapsable/Collapsable';
 import { Icon } from '../../components/Icon/Icon';
 import {
@@ -14,6 +17,13 @@ import './DashboardSideMenu.css';
 
 const DashboardSideMenu = (props) => {
 
+    const { menuOpen, setMenuOpen } = useContext(SideMenuContext);
+
+    const handleOnClick = (e) => {
+        e.preventDefault();
+        setMenuOpen(!menuOpen);
+    }
+
     const {
         classes
     } = props;
@@ -21,6 +31,7 @@ const DashboardSideMenu = (props) => {
     let styles = "dashboardSideMenuContainer ";
 
     classes ? styles += classes + " ": "";
+    menuOpen ? styles += "dashSideMenuOpen " : "";
 
     return (
 
@@ -31,6 +42,9 @@ const DashboardSideMenu = (props) => {
                     <Icon name="globe" lg />
                     EarthSense
                 </SideMenuTitle>
+                <button onClick={handleOnClick}>
+                    <Icon name="menu" classes="display-md-none display-lg-none" />
+                </button>
             </SideMenuBrand>
 
             <SideMenuList>
