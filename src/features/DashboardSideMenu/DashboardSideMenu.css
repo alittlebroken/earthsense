@@ -15,8 +15,15 @@
 @media screen and (max-width: 375px) {
 
     .dashboardSideMenuContainer {
-        grid-column-start: span 1;
-        display: none;
+        position: absolute;
+        width: 100vw;
+        height: 100vh;
+        z-index: 999999;
+        left: -100%;
+    }
+
+    .dashSideMenuOpen {
+        left: 0px;
     }
 
 }
