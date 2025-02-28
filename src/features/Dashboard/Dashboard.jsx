@@ -1,8 +1,7 @@
 
 
 import { DataContext } from '../../contexts/DataContext';
-import { toggleSideMenuContext } from '../../contexts/toggleSideMenuContex';
-import useWindowResize from '../../hooks/useWindowresize';
+import { SideMenuProvider } from '../../contexts/SideMenuContext';
 
 import DashboardSideMenu from '../DashboardSideMenu/DashboardSideMenu';
 import DashboardHeader from '../DashboardHeader/DashboardHeader';
@@ -15,24 +14,18 @@ import { meteorlogicalData } from '../../mocks/mockedData';
 const Dashboard = () => {
 
     const data = meteorlogicalData;
-    const sideMenuOpen = useWindowResize('375');
 
     return (
         <DataContext.Provider value={data}>
-            <toggleSideMenuContext.Provider value={sideMenuOpen}>
+            <SideMenuProvider>
                 <div className="dashboardContainer">
 
-                    <DashboardSideMenu classes="gap-2" />
+                    <DashboardSideMenu classes="gap-2 dashSideBar display-sm-none" />
+                    <DashboardHeader classes="dashHeader" />
+                    <DashboardMain classes="dashContent" />
 
-                    <div className="dashboardContentContainer">
-
-                        <DashboardHeader />
-
-                        <DashboardMain />
-
-                    </div>
                 </div>
-            </toggleSideMenuContext.Provider>
+            </SideMenuProvider>
         </DataContext.Provider>
     )
 };
