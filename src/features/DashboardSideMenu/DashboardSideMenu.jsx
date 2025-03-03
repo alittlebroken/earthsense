@@ -50,32 +50,32 @@ const DashboardSideMenu = (props) => {
             <SideMenuList>
                 <SideMenuListItem>
                     <Icon name="view_comfy_alt" />
-                    <Collapsable>Overview</Collapsable>
+                    Overview
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="group" />
-                    <Collapsable>Users</Collapsable>
+                   Users
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="devices" />
-                    <Collapsable>Devices</Collapsable>
+                    Devices
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="analytics" />
-                    <Collapsable>Measurements</Collapsable>
+                    Measurements
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="stacked_bar_chart" />
-                    <Collapsable>Reports</Collapsable>
+                    Reports
                 </SideMenuListItem>
 
                 <SideMenuListItem>
                     <Icon name="settings" />
-                    <Collapsable>Settings</Collapsable>
+                    Settings
                 </SideMenuListItem>
             </SideMenuList>
 
