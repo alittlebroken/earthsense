@@ -138,6 +138,10 @@ a:hover {
   width: 100%;
 }
 
+.width-full-vw {
+  width: 100vw;
+}
+
 /* Height */
 .height-3 {
   height: 3rem;
@@ -379,6 +383,10 @@ a:hover {
   color: var(--colour-white);
 }
 
+.debug {
+  bordeR: 2px solid red;
+}
+
 
 /* Mobile View */
 @media screen and (max-width: 375px) {
@@ -401,6 +409,25 @@ a:hover {
 
   .flex-sm-row {
     flex-direction: row;
+  }
+
+  .flex-sm-center {
+    justify-content: center;
+    align-items: center;
+  }
+
+  .flex-sm-between {
+    justify-content:space-between;
+    align-items: space-between;
+  }
+
+  .grid-sm-center {
+    align-content: center;
+    justify-items: center;
+  }
+
+  .grid-sm-align-between {
+    justify-content: space-between;
   }
 
 }
