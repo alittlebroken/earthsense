@@ -28,7 +28,7 @@ const DashChart = (props) => {
                        <CardTitle>{title}</CardTitle>
                    </CardHeader>
 
-                       <ResponsiveContainer width="100%" height="100%">
+                       <ResponsiveContainer>
                            <LineChart
                                margin={{
                                 top: 5,

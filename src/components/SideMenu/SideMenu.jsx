@@ -13,7 +13,9 @@ export const SideMenu = (props) => {
 
     return (
         <aside className={styles}>
-            {children}
+            <div className="sideMenuInner">
+                {children}
+            </div>
         </aside>
     )
 
@@ -26,7 +28,7 @@ export const SideMenuBrand = (props) => {
         classes,
     } = props;
 
-    let styles = "";
+    let styles = "sideMenuBrand ";
     classes ? styles += classes + " " : "";
 
     return (

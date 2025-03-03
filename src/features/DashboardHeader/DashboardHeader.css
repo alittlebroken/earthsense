@@ -4,8 +4,9 @@
     height: 75px;
     padding: 10px 30px;
 
-    grid-column-start: span 10;
-    grid-row-start: 1;
+    
     display: grid;
+    grid-template-columns: 1fr 1fr 35px;
     align-content: center;
+    justify-items: start;
 }
