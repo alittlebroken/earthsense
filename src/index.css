@@ -365,6 +365,20 @@ a:hover {
   flex-wrap: nowrap;
 }
 
+/* Button */
+.btn-hamburger {
+  border: none;
+  background: transparent;
+  width: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center; 
+}
+
+.btn-hamburger-light {
+  color: var(--colour-white);
+}
+
 
 /* Mobile View */
 @media screen and (max-width: 375px) {
@@ -375,6 +389,34 @@ a:hover {
 
   .display-sm-none {
     display:  block;
+  }
+
+  .flex-sm {
+    display: flex;
+  }
+
+  .flex-sm-col {
+    flex-direction: column;
+  }
+
+  .flex-sm-row {
+    flex-direction: row;
+  }
+
+}
+
+@media screen and (min-width: 376px) {
+
+  .display-md-none {
+    display: none;
+  }
+
+}
+
+@media screen and (min-width: 992px) {
+
+  .display-lg-none {
+    display: none;
   }
 
 }

@@ -37,12 +37,12 @@ const DashboardSideMenu = (props) => {
 
         <SideMenu classes={styles}>
 
-            <SideMenuBrand>
-                <SideMenuTitle classes="roboto-heading h2 grid grid-center">
+            <SideMenuBrand classes="grid grid-cols-3 gap-2 grid-center">
+                <SideMenuTitle classes="roboto-heading h2 gap-2 ">
                     <Icon name="globe" lg />
                     EarthSense
                 </SideMenuTitle>
-                <button onClick={handleOnClick}>
+                <button onClick={handleOnClick} className="btn-hamburger btn-hamburger-light display-md-none display-lg-none">
                     <Icon name="menu" classes="display-md-none display-lg-none" />
                 </button>
             </SideMenuBrand>

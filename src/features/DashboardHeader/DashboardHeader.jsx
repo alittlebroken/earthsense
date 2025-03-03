@@ -20,7 +20,7 @@ const DashboardHeader = () => {
             <nav>
                 
             </nav>
-            <button onClick={handleOnClick}>
+            <button onClick={handleOnClick} className="btn-hamburger display-md-none display-lg-none">
                 <Icon name="menu" classes="display-md-none display-lg-none" />
             </button>
         </header>
