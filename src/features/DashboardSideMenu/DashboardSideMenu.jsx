@@ -37,8 +37,8 @@ const DashboardSideMenu = (props) => {
 
         <SideMenu classes={styles}>
 
-            <SideMenuBrand classes="grid grid-cols-3 gap-2 grid-center">
-                <SideMenuTitle classes="roboto-heading h2 gap-2 ">
+            <SideMenuBrand classes="flex flex-center flex-sm-between ">
+                <SideMenuTitle classes="roboto-heading h2 gap-2 flex flex-col flex-center flex-sm flex-sm-center flex-sm-row">
                     <Icon name="globe" lg />
                     EarthSense
                 </SideMenuTitle>
