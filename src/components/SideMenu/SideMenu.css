@@ -28,4 +28,8 @@
 
 @media screen and (max-width: 375px) {
  
+    .sideMenuBrand {
+        width: calc(100vw - 60px);
+    }
+
 }
