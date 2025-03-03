@@ -28,7 +28,7 @@ export const SideMenuBrand = (props) => {
         classes,
     } = props;
 
-    let styles = "";
+    let styles = "sideMenuBrand ";
     classes ? styles += classes + " " : "";
 
     return (
