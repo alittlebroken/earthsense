@@ -1,6 +1,6 @@
 <h1 align="center">
   <br>
-  <a href="https://earthsense-1.onrender.com/"><img src="https://raw.githubusercontent.com/alittlebroken.earthsense/main/public/images/splash.png" alt="EarthSense" width="200"></a>
+  <a href="https://earthsense-1.onrender.com/"><img src="https://raw.githubusercontent.com/alittlebroken/earthsense/main/public/images/splash.png" alt="EarthSense" width="200"></a>
   <br>
   EarthSense
   <br>
