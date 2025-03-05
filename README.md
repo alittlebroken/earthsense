@@ -18,7 +18,7 @@ A responsive template for a simple dashboard built using React and recharts.
 
 ## Getting Started
 
-The following instructions will get this project up and running on your local computer ready for to customise anyway you like for development and testing purposes. See the deployment section for 
+The following instructions will get this project up and running on your local computer ready for to customise anyway you like for development and testing purposes.
 
 ### Prerequisites
 
